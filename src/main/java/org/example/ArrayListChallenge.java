@@ -34,7 +34,7 @@ public class ArrayListChallenge {
 //        groceries.addAll(List.of(items));
         for(String i:items){
             String trimmed = i.trim();
-            if(groceries.indexOf(trimmed) < 0){
+            if(!groceries.contains(trimmed)){
                 groceries.add(trimmed);
             }
         }
